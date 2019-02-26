@@ -1,6 +1,4 @@
-/**
- *
- */
+
 package dev.bscako.blaucher.graphics;
 
 import dev.bscako.blaucher.configuration.ApplicationProperties;

@@ -1,6 +1,4 @@
-/**
- *
- */
+
 package dev.bscako.blaucher.graphics.tools;
 
 import javax.swing.*;

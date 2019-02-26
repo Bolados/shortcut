@@ -1,6 +1,3 @@
-/**
- *
- */
 package dev.bscako.blaucher.configuration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -11,6 +8,7 @@ import java.io.Serializable;
  * @author BSCAKO
  *
  */
+
 @ConfigurationProperties(prefix = "app")
 public class ApplicationProperties implements Serializable {
 

@@ -1,9 +1,8 @@
-/**
- *
- */
 package dev.bscako.blaucher.models;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.NaturalIdCache;
 
 import javax.persistence.*;
@@ -19,7 +18,10 @@ import java.util.List;
 @Entity
 @Table(name = "categories")
 @NaturalIdCache
+@NoArgsConstructor
+@AllArgsConstructor
 @Data
+
 public class Category implements Serializable {
 
     @Id
@@ -32,4 +34,13 @@ public class Category implements Serializable {
     @ManyToMany(mappedBy = "categories", fetch = FetchType.EAGER)
     private List<Application> applications = new ArrayList<>();
 
+    public Category(String name, List<Application> applications) {
+        this.name = name;
+        this.applications = applications;
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

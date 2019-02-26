@@ -1,6 +1,4 @@
-/**
- *
- */
+
 package dev.bscako.blaucher.models;
 
 /**
